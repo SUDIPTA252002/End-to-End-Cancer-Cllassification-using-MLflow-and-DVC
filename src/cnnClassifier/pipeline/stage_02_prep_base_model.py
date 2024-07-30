@@ -17,11 +17,11 @@ class PrepareBaseModelTrainingPipeline:
         prep_base_model.get_base_model()
         prep_base_model.update_base_model()
 
-
+STAGE_NAME='Model Training Stage'
 if __name__=='__main__':
     try:
         logger.info(f">>>stage {STAGE_NAME} started")
-        obj=PrepareBaseModelTrainingPipeline();
+        obj=PrepareBaseModelTrainingPipeline()
         obj.main()
         logger.info(f">>>stage {STAGE_NAME} completed")
         logger.info("x================x")
