@@ -1,0 +1,15 @@
+artifact_uri: file:///G:/End-to-End-Cancer-Cllassification-using-MLflow-and-DVC/mlruns/0/c4d353b28179438ab46a367dd49f6515/artifacts
+end_time: 1722609886868
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c4d353b28179438ab46a367dd49f6515
+run_name: clumsy-shrike-706
+run_uuid: c4d353b28179438ab46a367dd49f6515
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722609687846
+status: 3
+tags: []
+user_id: User

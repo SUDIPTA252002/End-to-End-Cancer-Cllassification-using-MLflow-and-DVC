@@ -39,8 +39,8 @@ class PrepBaseModel:
     def update_base_model(self):
         self.full_model=self.prepare_full_model(model=self.model,
                                                 classes=self.config.params_classes,
-                                                freeze_all=True,
-                                                freeze_till=None,
+                                                freeze_all=False,
+                                                freeze_till=3,
                                                 learning_rate=self.config.params_learning_rate)
         
         print(self.config.updated_base_model_path)

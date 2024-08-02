@@ -1,0 +1,15 @@
+artifact_uri: file:///G:/End-to-End-Cancer-Cllassification-using-MLflow-and-DVC/mlruns/0/e3f4f647ea8b4c3dab473351373b762e/artifacts
+end_time: 1722603789596
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e3f4f647ea8b4c3dab473351373b762e
+run_name: beautiful-bee-280
+run_uuid: e3f4f647ea8b4c3dab473351373b762e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722603610212
+status: 3
+tags: []
+user_id: User
