@@ -14,15 +14,15 @@ class ModelEvaluationPipeline:
         evaluation_config=config.get_evaluation_config()
         evaluation=Evaluation(config=evaluation_config)
         evaluation.evaluate()
-        evaluation.log_into_mlflow()
+        # evaluation.log_into_mlflow()
 
 
-if __name__=="__init__":
+if __name__=="__main__":
     try:
         logger.info(f">>>stage {STAGE_NAME} started")
         obj=ModelEvaluationPipeline()
+        obj.main()
         logger.info(f">>>stage {STAGE_NAME} completed")
         logger.info("x================x")
-        obj.main()
     except Exception as e:
         raise CustomException(e,sys)

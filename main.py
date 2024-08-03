@@ -9,18 +9,18 @@ import sys
 STAGE_NAME="Data Ingestion Stage"
 
 
-if __name__=="__main__":
-    try:
-        logger.info("x================x")
-        logger.info(f">>>stage {STAGE_NAME} started")
-        obj=DataIngestionTrainingPipeline()
-        obj.main()
-        logger.info(f">>>stage {STAGE_NAME} completed")
-        logger.info("x================x")
-        pass
-    except Exception as e:
-        logger.exception(e)
-        raise CustomException(e,sys)
+# if __name__=="__main__":
+#     try:
+#         logger.info("x================x")
+#         logger.info(f">>>stage {STAGE_NAME} started")
+#         obj=DataIngestionTrainingPipeline()
+#         obj.main()
+#         logger.info(f">>>stage {STAGE_NAME} completed")
+#         logger.info("x================x")
+#         pass
+#     except Exception as e:
+#         logger.exception(e)
+#         raise CustomException(e,sys)
 
 
 STAGE_NAME='Preparation of Base Model Stage'

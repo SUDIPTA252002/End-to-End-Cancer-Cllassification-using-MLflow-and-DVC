@@ -40,7 +40,7 @@ class PrepBaseModel:
         self.full_model=self.prepare_full_model(model=self.model,
                                                 classes=self.config.params_classes,
                                                 freeze_all=False,
-                                                freeze_till=3,
+                                                freeze_till=4,
                                                 learning_rate=self.config.params_learning_rate)
         
         print(self.config.updated_base_model_path)
