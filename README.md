@@ -20,3 +20,8 @@ set MLFLOW_TRACKING_PASSWORD=b1f8c5cb32acb871ba2afc4d6329ec7f4fe26f97
 
 
 ```
+
+#AWS
+
+    #Create ECR repo to store/save docker image
+    - Save the URI: 975050116372.dkr.ecr.eu-north-1.amazonaws.com/cancer

@@ -43,7 +43,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGOION }}
+          aws-region: ${{ secrets.AWS_REGION }}
       
       - name: Login to Amazon ECR
         id: login-ecr
@@ -52,7 +52,7 @@ jobs:
       - name: Build,tag and push image to Amazon ECR
         id: build-image
         env:
-          ECR_REGISTRY: ${{step.login.ecr.outputs.registry}}
+          ECR_REGISTRY: ${{steps.login-ecr.outputs.registry}}
           ECR_REPOSITORY: ${{secrets.ECR_REPOSITORY_NAME}}
           IMAGE_TAG: latest
         run: |
@@ -68,14 +68,14 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Checkout code
-        uses: actions/chekout@v3
+        uses: actions/checkout@v3
       
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGOION }}
+          aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Login to Amazon ECR
         id: login-ecr
